@@ -1,0 +1,47 @@
+.renderBooks-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-card-container {
+    width: 25%;
+    padding: 0 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+.book-card-box {
+    display: flex;
+}
+
+.book-card-box img {
+    height: 180px;
+}
+
+.book-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.book-info p {
+    margin: 8px;
+}
+
+@media(max-width: 320px) {
+    .book-card-container {
+        min-width: 90%;
+        width: 95%;
+    }
+}
+
+@media(max-width: 320px) {
+    .book-card-box {
+        flex-direction: column;
+    }
+}
